@@ -1,0 +1,13 @@
+
+Disk /dev/loop0: 317.7 MiB, 333099008 bytes, 650584 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk /dev/sda: 298 GiB, 319988695040 bytes, 624977920 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk /dev/sdb: 2.7 TiB, 2999967547392 bytes, 5859311616 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
