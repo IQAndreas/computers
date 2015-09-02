@@ -1,0 +1,7 @@
+Attached devices:
+Host: scsi0 Channel: 00 Id: 00 Lun: 00
+  Vendor: MATSHITA Model: DVD-ROM UJ890AC  Rev: 1.00
+  Type:   CD-ROM                           ANSI  SCSI revision: 05
+Host: scsi2 Channel: 00 Id: 00 Lun: 00
+  Vendor: AMCC     Model: 9650SE-4LP DISK  Rev: 4.06
+  Type:   Direct-Access                    ANSI  SCSI revision: 05
