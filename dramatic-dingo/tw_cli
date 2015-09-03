@@ -1,0 +1,53 @@
+root@sysresccd /root % ./tw_cli show
+
+Ctl   Model        (V)Ports  Drives   Units   NotOpt  RRate   VRate  BBU
+------------------------------------------------------------------------
+c2    9690SA-8I    6         6        3       2       1       1      Charging 
+
+root@sysresccd /root % ./tw_cli /c2 show
+
+Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy
+------------------------------------------------------------------------------
+u0    RAID-1    OK             -       -       -       298.013   OFF    OFF    
+u1    RAID-10   DEGRADED       -       -       64K     1862.62   OFF    OFF    
+u2    RAID-10   DEGRADED       -       -       16K     1862.62   OFF    ON     
+
+VPort Status         Unit Size      Type  Phy Encl-Slot    Model
+------------------------------------------------------------------------------
+p0    OK             u0   298.09 GB SATA  0   -            Hitachi HDP725032GL 
+p1    OK             u1   931.51 GB SATA  1   -            Hitachi HDS721010CL 
+p2    OK             u2   931.51 GB SATA  2   -            ST31000340AS        
+p4    OK             u0   298.09 GB SATA  4   -            Hitachi HDP725032GL 
+p5    OK             u1   931.51 GB SATA  5   -            Hitachi HDS721010CL 
+p6    OK             u2   931.51 GB SATA  6   -            ST31000340AS        
+
+Name  OnlineState  BBUReady  Status    Volt     Temp     Hours  LastCapTest
+---------------------------------------------------------------------------
+bbu   On           No        Charging  OK       OK       0      xx-xxx-xxxx  
+
+root@sysresccd /root % ./tw_cli /c2/u1 show
+
+Unit     UnitType  Status         %RCmpl  %V/I/M  VPort Stripe  Size(GB)
+------------------------------------------------------------------------
+u1       RAID-10   DEGRADED       -       -       -     64K     1862.62   
+u1-0     RAID-1    DEGRADED       -       -       -     -       -         
+u1-0-0   DISK      DEGRADED       -       -       -     -       931.312   
+u1-0-1   DISK      OK             -       -       p5    -       931.312   
+u1-1     RAID-1    DEGRADED       -       -       -     -       -         
+u1-1-0   DISK      DEGRADED       -       -       -     -       931.312   
+u1-1-1   DISK      OK             -       -       p1    -       931.312   
+u1/v0    Volume    -              -       -       -     -       1862.62   
+
+root@sysresccd /root % ./tw_cli /c2/u2 show
+
+Unit     UnitType  Status         %RCmpl  %V/I/M  VPort Stripe  Size(GB)
+------------------------------------------------------------------------
+u2       RAID-10   DEGRADED       -       -       -     16K     1862.62   
+u2-0     RAID-1    DEGRADED       -       -       -     -       -         
+u2-0-0   DISK      OK             -       -       p2    -       931.312   
+u2-0-1   DISK      DEGRADED       -       -       -     -       931.312   
+u2-1     RAID-1    DEGRADED       -       -       -     -       -         
+u2-1-0   DISK      DEGRADED       -       -       -     -       931.312   
+u2-1-1   DISK      OK             -       -       p6    -       931.312   
+u2/v0    Volume    -              -       -       -     -       1862.62   
+
