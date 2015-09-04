@@ -1,0 +1,3 @@
+NAME  MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda     8:0    0   1.8T  0 disk 
+loop0   7:0    0 317.7M  0 loop /livemnt/squashfs

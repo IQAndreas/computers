@@ -1,0 +1,35 @@
+root@sysresccd /root % ./tw_cli show
+
+Ctl   Model        (V)Ports  Drives   Units   NotOpt  RRate   VRate  BBU
+------------------------------------------------------------------------
+c2    9650SE-4LPML 4         4        1       0       1       1      Charging 
+
+root@sysresccd /root % ./tw_cli /c2 show
+
+Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy
+------------------------------------------------------------------------------
+u0    RAID-10   VERIFYING      -       6%      256K    1862.62   Ri     ON     
+
+VPort Status         Unit Size      Type  Phy Encl-Slot    Model
+------------------------------------------------------------------------------
+p0    OK             u0   931.51 GB SATA  0   -            Hitachi HDS721010CL 
+p1    OK             u0   931.51 GB SATA  1   -            Hitachi HDT721010SL 
+p2    OK             u0   931.51 GB SATA  2   -            Hitachi HDS721010CL 
+p3    OK             u0   931.51 GB SATA  3   -            Hitachi HDS721010CL 
+
+Name  OnlineState  BBUReady  Status    Volt     Temp     Hours  LastCapTest
+---------------------------------------------------------------------------
+bbu   On           No        Charging  OK       OK       0      xx-xxx-xxxx  
+
+root@sysresccd /root % ./tw_cli /c2/u0 show
+
+Unit     UnitType  Status         %RCmpl  %V/I/M  Port  Stripe  Size(GB)
+------------------------------------------------------------------------
+u0       RAID-10   VERIFYING      -       6%      -     256K    1862.62   
+u0-0     RAID-1    VERIFYING      6%      -       -     -       -         
+u0-0-0   DISK      OK             -       -       p1    -       931.312   
+u0-0-1   DISK      OK             -       -       p3    -       931.312   
+u0-1     RAID-1    VERIFYING      6%      -       -     -       -         
+u0-1-0   DISK      OK             -       -       p2    -       931.312   
+u0-1-1   DISK      OK             -       -       p0    -       931.312   
+u0/v0    Volume    -              -       -       -     -       1862.62  
