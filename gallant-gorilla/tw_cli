@@ -1,0 +1,105 @@
+root@sysresccd /root % ./tw_cli show
+
+Ctl   Model        (V)Ports  Drives   Units   NotOpt  RRate   VRate  BBU
+------------------------------------------------------------------------
+c4    9690SA-4I    12        12       4       1       1       1      Charging 
+
+Enclosure     Slots  Drives  Fans  TSUnits  PSUnits  Alarms   
+--------------------------------------------------------------
+/c4/e0        12     12      3     1        0        0        
+
+root@sysresccd /root % ./tw_cli /c4 show
+
+Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy
+------------------------------------------------------------------------------
+u0    RAID-0    OK             -       -       64K     7450.5    OFF    OFF    
+u1    RAID-1    INITIALIZING   -       4%      -       298.013   OFF    OFF    
+u2    SPARE     OK             -       -       -       931.505   -      OFF    
+u3    SPARE     OK             -       -       -       931.505   -      OFF    
+
+VPort Status         Unit Size      Type  Phy Encl-Slot    Model
+------------------------------------------------------------------------------
+p0    OK             u1   298.09 GB SATA  -   /c4/e0/slt0  Hitachi HDP725032GL 
+p1    OK             u1   298.09 GB SATA  -   /c4/e0/slt1  Hitachi HDP725032GL 
+p2    OK             u0   931.51 GB SATA  -   /c4/e0/slt2  Hitachi HDS721010CL 
+p3    OK             u0   931.51 GB SATA  -   /c4/e0/slt4  Hitachi HDS721010CL 
+p4    OK             u0   931.51 GB SATA  -   /c4/e0/slt5  Hitachi HDS721010CL 
+p5    OK             u0   931.51 GB SATA  -   /c4/e0/slt6  Hitachi HDS721010CL 
+p6    OK             u0   931.51 GB SATA  -   /c4/e0/slt7  Hitachi HDS721010CL 
+p7    OK             u0   931.51 GB SATA  -   /c4/e0/slt8  Hitachi HDS721010CL 
+p8    OK             u0   931.51 GB SATA  -   /c4/e0/slt9  Hitachi HDS721010CL 
+p9    OK             u2   931.51 GB SATA  -   /c4/e0/slt10 Hitachi HDS721010CL 
+p10   OK             u3   931.51 GB SATA  -   /c4/e0/slt11 Hitachi HDS721010CL 
+p11   OK             u0   931.51 GB SATA  -   /c4/e0/slt3  Hitachi HDS721010CL 
+
+Name  OnlineState  BBUReady  Status    Volt     Temp     Hours  LastCapTest
+---------------------------------------------------------------------------
+bbu   On           No        Charging  OK       OK       0      xx-xxx-xxxx  
+
+root@sysresccd /root % ./tw_cli /c4/u0 show
+
+Unit     UnitType  Status         %RCmpl  %V/I/M  VPort Stripe  Size(GB)
+------------------------------------------------------------------------
+u0       RAID-0    OK             -       -       -     64K     7450.5    
+u0-0     DISK      OK             -       -       p8    -       931.312   
+u0-1     DISK      OK             -       -       p7    -       931.312   
+u0-2     DISK      OK             -       -       p6    -       931.312   
+u0-3     DISK      OK             -       -       p5    -       931.312   
+u0-4     DISK      OK             -       -       p4    -       931.312   
+u0-5     DISK      OK             -       -       p3    -       931.312   
+u0-6     DISK      OK             -       -       p11   -       931.312   
+u0-7     DISK      OK             -       -       p2    -       931.312   
+u0/v0    Volume    -              -       -       -     -       7450.5    
+
+root@sysresccd /root % ./tw_cli /c4/u1 show
+
+Unit     UnitType  Status         %RCmpl  %V/I/M  VPort Stripe  Size(GB)
+------------------------------------------------------------------------
+u1       RAID-1    INITIALIZING   -       5%      -     -       298.013   
+u1-0     DISK      OK             -       -       p1    -       298.013   
+u1-1     DISK      OK             -       -       p0    -       298.013   
+u1/v0    Volume    -              -       -       -     -       298.013   
+
+root@sysresccd /root % ./tw_cli /c4/u2 show
+
+Unit     UnitType  Status         %RCmpl  %V/I/M  VPort Stripe  Size(GB)
+------------------------------------------------------------------------
+u2       SPARE     OK             -       -       p9    -       931.505   
+
+root@sysresccd /root % ./tw_cli /c4/u3 show
+
+Unit     UnitType  Status         %RCmpl  %V/I/M  VPort Stripe  Size(GB)
+------------------------------------------------------------------------
+u3       SPARE     OK             -       -       p10   -       931.505   
+
+root@sysresccd /root % ./tw_cli /c4/e0 show
+
+Encl        Status      
+-----------------------------
+/c4/e0      OK              
+
+                                    ---Speed--- 
+Fan         Status          State   Step   RPM     Identify
+------------------------------------------------------------
+fan0        OK              ON      1      5100    N/A     
+fan1        OK              ON      1      4980    N/A     
+fan2        OK              ON      1      5220    N/A     
+
+TempSensor    Status         Temperature     Identify 
+--------------------------------------------------------
+temp0         OK             24C(75F)        N/A             
+
+Slot      Status          (V)Port       Identify
+--------------------------------------------------
+slot0     OK              /c4/p0        Off           
+slot1     OK              /c4/p1        Off           
+slot2     OK              /c4/p2        Off           
+slot3     OK              /c4/p11       Off           
+slot4     OK              /c4/p3        Off           
+slot5     OK              /c4/p4        Off           
+slot6     OK              /c4/p5        Off           
+slot7     OK              /c4/p6        Off           
+slot8     OK              /c4/p7        Off           
+slot9     OK              /c4/p8        Off           
+slot10    OK              /c4/p9        Off           
+slot11    OK              /c4/p10       Off   

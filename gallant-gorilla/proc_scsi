@@ -1,0 +1,7 @@
+Attached devices:
+Host: scsi4 Channel: 00 Id: 00 Lun: 00
+  Vendor: AMCC     Model: 9690SA-4I  DISK  Rev: 4.04
+  Type:   Direct-Access                    ANSI  SCSI revision: 05
+Host: scsi4 Channel: 00 Id: 01 Lun: 00
+  Vendor: AMCC     Model: 9690SA-4I  DISK  Rev: 4.04
+  Type:   Direct-Access                    ANSI  SCSI revision: 05

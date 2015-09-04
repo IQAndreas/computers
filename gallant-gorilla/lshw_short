@@ -1,0 +1,36 @@
+H/W path          Device    Class      Description
+==================================================
+                            system     S3210SH (English)
+/0                          bus        S3210SH
+/0/5                        memory     64KiB BIOS
+/0/31                       processor  Intel(R) Core(TM)2 CPU          6600  @ 2.40GHz
+/0/31/32                    memory     4MiB L2 cache
+/0/31/33                    memory     64KiB L1 cache
+/0/31/0.1                   processor  Logical CPU
+/0/31/0.2                   processor  Logical CPU
+/0/34                       memory     2GiB System Memory
+/0/34/0                     memory     2GiB DIMM DDR2 Synchronous 667 MHz (1.5 ns)
+/0/34/1                     memory     DIMM DDR2 [empty]
+/0/34/2                     memory     DIMM DDR2 [empty]
+/0/34/3                     memory     DIMM DDR2 [empty]
+/0/100                      bridge     3200/3210 Chipset DRAM Controller
+/0/100/1                    bridge     3200/3210 Chipset Host-Primary PCI Express Bridge
+/0/100/1/0        scsi4     storage    9690SA SAS/SATA-II RAID PCIe
+/0/100/1/0/0.0.0  /dev/sda  disk       7999GB 9690SA-4I  DISK
+/0/100/1/0/0.1.0  /dev/sdb  disk       319GB 9690SA-4I  DISK
+/0/100/1a                   bus        82801I (ICH9 Family) USB UHCI Controller #4
+/0/100/1a.1                 bus        82801I (ICH9 Family) USB UHCI Controller #5
+/0/100/1a.7                 bus        82801I (ICH9 Family) USB2 EHCI Controller #2
+/0/100/1c                   bridge     82801I (ICH9 Family) PCI Express Port 1
+/0/100/1c.4                 bridge     82801I (ICH9 Family) PCI Express Port 5
+/0/100/1c.4/0               display    MGA G200e [Pilot] ServerEngines (SEP1)
+/0/100/1d                   bus        82801I (ICH9 Family) USB UHCI Controller #1
+/0/100/1d.1                 bus        82801I (ICH9 Family) USB UHCI Controller #2
+/0/100/1d.2                 bus        82801I (ICH9 Family) USB UHCI Controller #3
+/0/100/1d.7                 bus        82801I (ICH9 Family) USB2 EHCI Controller #1
+/0/100/1e                   bridge     82801 PCI Bridge
+/0/100/1e/2       enp4s2    network    82541GI Gigabit Ethernet Controller
+/0/100/1f                   bridge     82801IR (ICH9R) LPC Interface Controller
+/0/100/1f.2                 storage    82801IR/IO/IH (ICH9R/DO/DH) 4 port SATA Controller [IDE mode]
+/0/100/1f.3                 bus        82801I (ICH9 Family) SMBus Controller
+/0/100/1f.5                 storage    82801I (ICH9 Family) 2 port SATA Controller [IDE mode]
