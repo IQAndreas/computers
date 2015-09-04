@@ -1,0 +1,12 @@
+Filesystem      Size  Used Avail Use% Mounted on
+rootfs          3.9G  3.7M  3.9G   1% /
+udev             10M   64K   10M   1% /dev
+tmpfs           2.0G  430M  1.6G  21% /livemnt/boot
+/dev/loop0      318M  318M     0 100% /livemnt/squashfs
+tmpfs           3.9G  3.7M  3.9G   1% /livemnt/memory
+none            3.9G  3.7M  3.9G   1% /
+tmpfs           512M   20K  512M   1% /livemnt/tftpmem
+none            512M   20K  512M   1% /tftpboot
+tmpfs           799M  808K  798M   1% /run
+shm             3.9G     0  3.9G   0% /dev/shm
+tmpfs           3.9G   60K  3.9G   1% /tmp
