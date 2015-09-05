@@ -1,0 +1,10 @@
+Attached devices:
+Host: scsi0 Channel: 00 Id: 01 Lun: 00
+  Vendor: MATSHITA Model: DVD-ROM UJDA780  Rev: 1.50
+  Type:   CD-ROM                           ANSI  SCSI revision: 05
+Host: scsi2 Channel: 00 Id: 00 Lun: 00
+  Vendor: AMCC     Model: 9690SA-8I  DISK  Rev: 4.08
+  Type:   Direct-Access                    ANSI  SCSI revision: 05
+Host: scsi2 Channel: 00 Id: 01 Lun: 00
+  Vendor: AMCC     Model: 9690SA-8I  DISK  Rev: 4.08
+  Type:   Direct-Access                    ANSI  SCSI revision: 05

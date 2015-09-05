@@ -1,0 +1,102 @@
+H/W path          Device      Class      Description
+====================================================
+                              system     X7DB8 ()
+/0                            bus        X7DB8
+/0/0                          memory     108KiB BIOS
+/0/4                          processor  Intel(R) Xeon(R) CPU           E5335  @ 2.00GHz
+/0/4/6                        memory     16KiB L1 cache
+/0/4/7                        memory     8MiB L2 cache
+/0/4/0.1                      processor  Logical CPU
+/0/4/0.2                      processor  Logical CPU
+/0/4/0.3                      processor  Logical CPU
+/0/4/0.4                      processor  Logical CPU
+/0/5                          processor  Intel(R) Xeon(R) CPU           E5335  @ 2.00GHz
+/0/5/8                        memory     16KiB L1 cache
+/0/5/9                        memory     8MiB L2 cache
+/0/5/4.1                      processor  Logical CPU
+/0/5/4.2                      processor  Logical CPU
+/0/5/4.3                      processor  Logical CPU
+/0/5/4.4                      processor  Logical CPU
+/0/17                         memory     32GiB System Memory
+/0/17/0                       memory     4GiB DIMM DDR2 Synchronous 667 MHz (1.5 ns)
+/0/17/1                       memory     4GiB DIMM DDR2 Synchronous 667 MHz (1.5 ns)
+/0/17/2                       memory     DIMM DDR2 Synchronous 667 MHz (1.5 ns) [empty]
+/0/17/3                       memory     DIMM DDR2 Synchronous 667 MHz (1.5 ns) [empty]
+/0/17/4                       memory     4GiB DIMM DDR2 Synchronous 667 MHz (1.5 ns)
+/0/17/5                       memory     4GiB DIMM DDR2 Synchronous 667 MHz (1.5 ns)
+/0/17/6                       memory     DIMM DDR2 Synchronous 667 MHz (1.5 ns) [empty]
+/0/17/7                       memory     DIMM DDR2 Synchronous 667 MHz (1.5 ns) [empty]
+/0/17/8                       memory     4GiB DIMM DDR2 Synchronous 667 MHz (1.5 ns)
+/0/17/9                       memory     4GiB DIMM DDR2 Synchronous 667 MHz (1.5 ns)
+/0/17/a                       memory     DIMM DDR2 Synchronous 667 MHz (1.5 ns) [empty]
+/0/17/b                       memory     DIMM DDR2 Synchronous 667 MHz (1.5 ns) [empty]
+/0/17/c                       memory     4GiB DIMM DDR2 Synchronous 667 MHz (1.5 ns)
+/0/17/d                       memory     4GiB DIMM DDR2 Synchronous 667 MHz (1.5 ns)
+/0/17/e                       memory     DIMM DDR2 Synchronous 667 MHz (1.5 ns) [empty]
+/0/17/f                       memory     DIMM DDR2 Synchronous 667 MHz (1.5 ns) [empty]
+/0/1                          processor  
+/0/1/1.1                      processor  Logical CPU
+/0/1/1.2                      processor  Logical CPU
+/0/1/1.3                      processor  Logical CPU
+/0/1/1.4                      processor  Logical CPU
+/0/2                          processor  
+/0/2/5.1                      processor  Logical CPU
+/0/2/5.2                      processor  Logical CPU
+/0/2/5.3                      processor  Logical CPU
+/0/2/5.4                      processor  Logical CPU
+/0/3                          processor  
+/0/3/2.1                      processor  Logical CPU
+/0/3/2.2                      processor  Logical CPU
+/0/3/2.3                      processor  Logical CPU
+/0/3/2.4                      processor  Logical CPU
+/0/6                          processor  
+/0/6/6.1                      processor  Logical CPU
+/0/6/6.2                      processor  Logical CPU
+/0/6/6.3                      processor  Logical CPU
+/0/6/6.4                      processor  Logical CPU
+/0/7                          processor  
+/0/7/3.1                      processor  Logical CPU
+/0/7/3.2                      processor  Logical CPU
+/0/7/3.3                      processor  Logical CPU
+/0/7/3.4                      processor  Logical CPU
+/0/8                          processor  
+/0/8/7.1                      processor  Logical CPU
+/0/8/7.2                      processor  Logical CPU
+/0/8/7.3                      processor  Logical CPU
+/0/8/7.4                      processor  Logical CPU
+/0/100                        bridge     5000P Chipset Memory Controller Hub
+/0/100/2                      bridge     5000 Series Chipset PCI Express x8 Port 2-3
+/0/100/2/0                    bridge     6311ESB/6321ESB PCI Express Upstream Port
+/0/100/2/0/0                  bridge     6311ESB/6321ESB PCI Express Downstream Port E1
+/0/100/2/0/0/0                bridge     6700PXH PCI Express-to-PCI Bridge A
+/0/100/2/0/0/0.2              bridge     6700PXH PCI Express-to-PCI Bridge B
+/0/100/2/0/2                  bridge     6311ESB/6321ESB PCI Express Downstream Port E3
+/0/100/2/0/2/0    enp6s0f0    network    80003ES2LAN Gigabit Ethernet Controller (Copper)
+/0/100/2/0/2/0.1  enp6s0f1    network    80003ES2LAN Gigabit Ethernet Controller (Copper)
+/0/100/2/0.3                  bridge     6311ESB/6321ESB PCI Express to PCI-X Bridge
+/0/100/4                      bridge     5000 Series Chipset PCI Express x8 Port 4-5
+/0/100/4/0        scsi2       storage    9690SA SAS/SATA-II RAID PCIe
+/0/100/4/0/0.0.0  /dev/sda    disk       319GB 9690SA-8I  DISK
+/0/100/4/0/0.1.0  /dev/sdb    disk       639GB 9690SA-8I  DISK
+/0/100/6                      bridge     5000 Series Chipset PCI Express x8 Port 6-7
+/0/100/8                      generic    5000 Series Chipset DMA Engine
+/0/100/1c                     bridge     631xESB/632xESB/3100 Chipset PCI Express Root Port 1
+/0/100/1d                     bus        631xESB/632xESB/3100 Chipset UHCI USB Controller #1
+/0/100/1d.1                   bus        631xESB/632xESB/3100 Chipset UHCI USB Controller #2
+/0/100/1d.2                   bus        631xESB/632xESB/3100 Chipset UHCI USB Controller #3
+/0/100/1d.7                   bus        631xESB/632xESB/3100 Chipset EHCI USB2 Controller
+/0/100/1e                     bridge     82801 PCI Bridge
+/0/100/1e/1                   display    ES1000
+/0/100/1f                     bridge     631xESB/632xESB/3100 Chipset LPC Interface Controller
+/0/100/1f.1                   storage    631xESB/632xESB IDE Controller
+/0/100/1f.3                   bus        631xESB/632xESB/3100 Chipset SMBus Controller
+/0/101                        bridge     5000 Series Chipset FSB Registers
+/0/102                        bridge     5000 Series Chipset FSB Registers
+/0/103                        bridge     5000 Series Chipset FSB Registers
+/0/104                        bridge     5000 Series Chipset Reserved Registers
+/0/105                        bridge     5000 Series Chipset Reserved Registers
+/0/106                        bridge     5000 Series Chipset FBD Registers
+/0/107                        bridge     5000 Series Chipset FBD Registers
+/0/9              scsi0       storage    
+/0/9/0.1.0        /dev/cdrom  disk       DVD-ROM UJDA780
+/1                            system     

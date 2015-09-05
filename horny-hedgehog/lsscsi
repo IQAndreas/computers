@@ -1,0 +1,3 @@
+[0:0:1:0]    cd/dvd  MATSHITA DVD-ROM UJDA780  1.50  /dev/sr0 
+[2:0:0:0]    disk    AMCC     9690SA-8I  DISK  4.08  /dev/sda 
+[2:0:1:0]    disk    AMCC     9690SA-8I  DISK  4.08  /dev/sdb 

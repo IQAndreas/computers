@@ -1,0 +1,48 @@
+root@sysresccd /root % ./tw_cli show
+
+Ctl   Model        (V)Ports  Drives   Units   NotOpt  RRate   VRate  BBU
+------------------------------------------------------------------------
+c2    9690SA-8I    6         6        2       0       1       1      Charging 
+
+root@sysresccd /root % ./tw_cli /c2 show
+
+Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy
+------------------------------------------------------------------------------
+u0    RAID-1    VERIFYING      -       84%     -       298.013   Ri     ON     
+u1    RAID-10   VERIFYING      -       79%     64K     596.025   Ri     ON     
+
+VPort Status         Unit Size      Type  Phy Encl-Slot    Model
+------------------------------------------------------------------------------
+p0    OK             u0   298.09 GB SATA  0   -            ST3320613AS         
+p1    OK             u0   298.09 GB SATA  1   -            ST3320613AS         
+p2    OK             u1   298.09 GB SATA  2   -            Hitachi HDT721032SL 
+p3    OK             u1   298.09 GB SATA  3   -            Hitachi HDT721032SL 
+p5    OK             u1   298.09 GB SATA  5   -            Hitachi HDT721032SL 
+p6    OK             u1   298.09 GB SATA  6   -            Hitachi HDT721032SL 
+
+Name  OnlineState  BBUReady  Status    Volt     Temp     Hours  LastCapTest
+---------------------------------------------------------------------------
+bbu   On           No        Charging  OK       OK       0      xx-xxx-xxxx  
+
+root@sysresccd /root % ./tw_cli /c2/u0 show
+
+Unit     UnitType  Status         %RCmpl  %V/I/M  VPort Stripe  Size(GB)
+------------------------------------------------------------------------
+u0       RAID-1    VERIFYING      -       85%     -     -       298.013   
+u0-0     DISK      OK             -       -       p0    -       298.013   
+u0-1     DISK      OK             -       -       p1    -       298.013   
+u0/v0    Volume    -              -       -       -     -       298.013   
+
+root@sysresccd /root % ./tw_cli /c2/u1 show
+
+Unit     UnitType  Status         %RCmpl  %V/I/M  VPort Stripe  Size(GB)
+------------------------------------------------------------------------
+u1       RAID-10   VERIFYING      -       79%     -     64K     596.025   
+u1-0     RAID-1    VERIFYING      80%     -       -     -       -         
+u1-0-0   DISK      OK             -       -       p6    -       298.013   
+u1-0-1   DISK      OK             -       -       p5    -       298.013   
+u1-1     RAID-1    VERIFYING      78%     -       -     -       -         
+u1-1-0   DISK      OK             -       -       p3    -       298.013   
+u1-1-1   DISK      OK             -       -       p2    -       298.013   
+u1/v0    Volume    -              -       -       -     -       596.025   
+

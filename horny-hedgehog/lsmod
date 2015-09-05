@@ -1,0 +1,44 @@
+Module                  Size  Used by
+video                  16832  0 
+iTCO_wdt               12390  0 
+gpio_ich               12390  0 
+iTCO_vendor_support    12938  1 iTCO_wdt
+coretemp               12390  0 
+i2c_i801               16533  0 
+lpc_ich                20629  0 
+i5000_edac             12437  0 
+ata_generic            12437  0 
+mfd_core               12807  1 lpc_ich
+ppdev                  12390  0 
+ioatdma                47292  3 
+edac_core              42220  2 i5000_edac
+pata_acpi              12437  0 
+microcode              41719  0 
+parport_pc             20890  0 
+dca                    13614  1 ioatdma
+serio_raw              12439  0 
+parport                32780  2 ppdev,parport_pc
+shpchp                 29571  0 
+i5k_amb                12437  0 
+raid10                 37123  0 
+raid456                57671  0 
+async_raid6_recov      12621  1 raid456
+async_pq               12640  2 raid456,async_raid6_recov
+async_xor              12573  3 async_pq,raid456,async_raid6_recov
+async_memcpy           12464  2 raid456,async_raid6_recov
+async_tx               12840  5 async_pq,raid456,async_xor,async_memcpy,async_raid6_recov
+raid1                  28900  0 
+raid0                  16515  0 
+multipath              12390  0 
+linear                 12390  0 
+radeon               1060550  1 
+ttm                    66567  1 radeon
+drm_kms_helper         37632  1 radeon
+usb_storage            52365  0 
+drm                   216971  3 ttm,drm_kms_helper,radeon
+i2c_algo_bit           12633  1 radeon
+i2c_core               28590  5 drm,i2c_i801,drm_kms_helper,i2c_algo_bit,radeon
+3w_9xxx                37013  0 
+e1000e                155717  0 
+ptp                    13019  1 e1000e
+pps_core               12906  1 ptp
